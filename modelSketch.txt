@@ -1,0 +1,47 @@
+App: Booking System API
+Description: Allows a user to enroll to a course. Allows an admin to do CRUD operations. Allows users to register into our database.
+
+course:
+	id,
+	name - string,
+	description - string,
+	price - number,
+	isActive - boolean,
+			   default: true
+	enrolless {
+		id,
+		userId,
+		status - string,
+		dateEnrolled - date
+	}
+
+
+
+user:
+	id,
+	firstName - string,
+	lastName - string,
+	email - string,
+	password - string,
+	mobileNo - string,
+	isAdmin - boolean,
+			  default: false
+	enrollments {
+		id,
+		courseId,
+		status - string,
+		dateEnrolled - date		
+	}
+
+
+
+enrollment:
+	id,
+	courseId,
+	userId,
+	status - string,
+	dateEnrolled - date
+
+In MongoDB, we can translate our associative entity as an embedded subdocument array with the use of Two Way Embedding.
+
+Two Way Embedding - Emebed the associative entity in our user and course document.
