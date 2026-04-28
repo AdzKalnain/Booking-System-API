@@ -13,7 +13,8 @@ const mongoose = require("mongoose");
 	Note: Before the ? in the connection string, add the database name.
 */
 
-mongoose.connect("mongodb+srv://admin:admin123@cluster0.aqugixu.mongodb.net/bookingAPI?retryWrites=true&w=majority",{
+// Planning to use ENV for this, therefore I removed my MongoDB connection string.
+mongoose.connect("mongodb+srv://our-mongodb-connection-string-here",{
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 });
