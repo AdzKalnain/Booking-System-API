@@ -119,7 +119,7 @@ Tokens are issued upon successful login and contain the user's `id`, `email`, an
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/booking-system-api.git
+   git clone https://github.com/AdzKalnain/booking-system-api.git
    cd booking-system-api
    ```
 
